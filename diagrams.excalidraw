@@ -470,7 +470,7 @@
       "type": "text",
       "x": 1288,
       "y": 522,
-      "width": 170,
+      "width": 108,
       "height": 75,
       "angle": 0,
       "strokeColor": "#000000",
@@ -483,8 +483,8 @@
       "groupIds": [],
       "roundness": null,
       "seed": 1538925798,
-      "version": 41,
-      "versionNonce": 290528378,
+      "version": 62,
+      "versionNonce": 1355730746,
       "isDeleted": false,
       "boundElements": [
         {
@@ -492,24 +492,24 @@
           "type": "arrow"
         }
       ],
-      "updated": 1678293860917,
+      "updated": 1678294176899,
       "link": null,
       "locked": false,
-      "text": "SongList\nState:none\nprops:top20Songs",
+      "text": "SongList\nState:none\nprops:songs",
       "fontSize": 20,
       "fontFamily": 1,
       "textAlign": "left",
       "verticalAlign": "top",
       "baseline": 68,
       "containerId": null,
-      "originalText": "SongList\nState:none\nprops:top20Songs"
+      "originalText": "SongList\nState:none\nprops:songs"
     },
     {
       "id": "HwZNDkj5wgeiXNu-lGZlX",
       "type": "arrow",
-      "x": 1364.125,
+      "x": 1351.6775000778032,
       "y": 473.359375,
-      "width": 0.278564453125,
+      "width": 7.640472806697517,
       "height": 42.187255859375,
       "angle": 0,
       "strokeColor": "#000000",
@@ -522,11 +522,11 @@
       "groupIds": [],
       "roundness": null,
       "seed": 1188905850,
-      "version": 23,
-      "versionNonce": 1704922342,
+      "version": 65,
+      "versionNonce": 56940538,
       "isDeleted": false,
       "boundElements": null,
-      "updated": 1678293860917,
+      "updated": 1678294176899,
       "link": null,
       "locked": false,
       "points": [
@@ -535,7 +535,7 @@
           0
         ],
         [
-          0.278564453125,
+          -7.640472806697517,
           42.187255859375
         ]
       ],
