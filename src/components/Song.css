@@ -1,0 +1,36 @@
+.song-card {
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    background-color: rgb(0, 0, 0);
+    border-radius: 1rem;
+    align-items: center;
+
+}
+
+img {
+    border-radius: 0.5rem;
+    width: 100%;
+
+
+}
+
+h2 {
+    margin: 0.5rem;
+}
+
+.song-card>p {
+    width: 13rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin: 0.25rem
+}
+
+audio {
+    margin-top: 1rem;
+    width: inherit;
+    height: 2rem;
+
+}

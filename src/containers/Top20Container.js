@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ChartSelector from "../components/ChartSelector";
 import SongList from "../components/SongList";
+import "./Top20Container.css"
 
 function Top20Container() {
 
@@ -37,7 +38,7 @@ function Top20Container() {
 
     return (
         <div className="top-20-container">
-            <p>Top20Container</p>
+            <h1>Top 20</h1>
             <ChartSelector charts={charts} changeChart={changeChart} />
             <SongList songs={songs} />
         </div>

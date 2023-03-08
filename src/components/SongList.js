@@ -1,4 +1,5 @@
 import React from "react";
+import "./SongList.css"
 import Song from "./Song";
 
 function SongList({ songs }) {
@@ -7,7 +8,7 @@ function SongList({ songs }) {
     })
     return (
         <div className="song-list">
-            <p>SongList</p>
+
             {songNodes}
         </div>
     )
