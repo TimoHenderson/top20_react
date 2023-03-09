@@ -1,6 +1,6 @@
 import React from "react";
 import './Song.css'
-function Song({ position, song }) {
+function Song({ position, song, selectSong }) {
 
     return (
         <div className="song-card">
@@ -8,8 +8,8 @@ function Song({ position, song }) {
             <h2>{position}</h2>
             <p>{song["im:name"].label}</p>
             <p>by {song["im:artist"].label}</p>
-            <audio src={song.link[1].attributes.href} controls></audio>
 
+            <button onClick={() => selectSong(song)}>Play</button>
         </div>
     )
 }

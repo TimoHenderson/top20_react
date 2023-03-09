@@ -1,0 +1,43 @@
+.audio-player {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100dvw;
+
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    background-color: black;
+    padding: 0.5rem;
+}
+
+#playerImage {
+    width: 80px;
+    ;
+
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-content: center;
+    padding: 0.5rem;
+    text-align: left;
+
+}
+
+p {
+    margin: 0;
+}
+
+#audioControls {
+    height: 1.5rem;
+
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: grey;
+}

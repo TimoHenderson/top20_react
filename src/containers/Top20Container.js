@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import AudioPlayer from "../components/AudioPlayer";
 import ChartSelector from "../components/ChartSelector";
 import SongList from "../components/SongList";
 import "./Top20Container.css"
@@ -13,6 +14,7 @@ function Top20Container() {
         { name: "Country", url: "https://itunes.apple.com/gb/rss/topsongs/limit=20/genre=6/json" }
     ]);
     const [chart, setChart] = useState(charts[0]);
+    const [selectedSong, setSelectedSong] = useState(null)
 
 
     useEffect(() => {
@@ -20,7 +22,10 @@ function Top20Container() {
     }, [chart]);
 
 
-
+    function selectSong(song) {
+        console.log("selectSong", song)
+        setSelectedSong(song);
+    }
 
     function changeChart(chart) {
         console.log("changeChart", chart)
@@ -37,11 +42,13 @@ function Top20Container() {
     }
 
     return (
-        <div className="top-20-container">
+        <> <div className="top-20-container">
             <h1>Top 20</h1>
             <ChartSelector charts={charts} changeChart={changeChart} />
-            <SongList songs={songs} />
+            <SongList songs={songs} selectSong={selectSong} />
+
         </div>
+            <AudioPlayer selectedSong={selectedSong} /></>
     )
 }
 export default Top20Container;
