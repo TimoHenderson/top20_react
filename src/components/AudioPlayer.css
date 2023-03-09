@@ -1,15 +1,22 @@
-.audio-player {
+.audioPlayerContainer {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100dvw;
+    background-color: black;
+    z-index: 3;
+}
 
+.audio-player {
+    position: relative;
+    max-width: 700px;
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr 5fr;
     align-items: center;
     justify-content: center;
-    z-index: 3;
-    background-color: black;
+
+
     padding: 0.5rem;
 }
 

@@ -8,12 +8,14 @@ function AudioPlayer({ selectedSong }) {
         audioNode.current.play()
     }, [selectedSong])
     return (
-        <div className="audio-player">
-            <img id="playerImage" src={selectedSong ? selectedSong["im:image"][2].label : noSong} alt="selectedSong" />
-            <div className="details">
-                <p>{selectedSong ? selectedSong["im:name"].label : "No Song"}</p>
-                <p>by {selectedSong ? selectedSong["im:artist"].label : "No Artist"}</p>
-                <audio id="audioControls" ref={audioNode} src={selectedSong ? selectedSong.link[1].attributes.href : ""} controls></audio>
+        <div className="audioPlayerContainer">
+            <div className="audio-player">
+                <img id="playerImage" src={selectedSong ? selectedSong["im:image"][2].label : noSong} alt="selectedSong" />
+                <div className="details">
+                    <p>{selectedSong ? selectedSong["im:name"].label : "No Song"}</p>
+                    <p>by {selectedSong ? selectedSong["im:artist"].label : "No Artist"}</p>
+                    <audio id="audioControls" ref={audioNode} src={selectedSong ? selectedSong.link[1].attributes.href : ""} controls></audio>
+                </div>
             </div>
         </div>
     )
